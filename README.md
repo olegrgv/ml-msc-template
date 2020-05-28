@@ -15,7 +15,7 @@ If for some reason you choose not to use Anaconda, you must install the followin
 * python-socketio
 * scikit-image
 
-## Data
+# Data
 - A link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control.
 
 # Getting started
