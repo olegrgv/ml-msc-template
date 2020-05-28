@@ -91,7 +91,12 @@ For all reported experimental results, check if you include:
 - The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results.
 
 # Project structure
-
+You may find useful one of the ready-to-use file structure generators, if needed:
+https://github.com/ramonmoraes/structure-generator
+Or simply use
+```
+git ls-tree -r master --name-only
+```
 This repo has following directory structure:
 ```
 .
