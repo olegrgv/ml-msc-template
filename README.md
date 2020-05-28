@@ -25,20 +25,6 @@ If for some reason you choose not to use Anaconda, you must install the followin
 # Data
 Provide a link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control (e.g, CVAT was used etc.).
 
-The data directory is organized as follows:
-```
-data/runs - contains the results of prediction runs
-data/train/images - contains images for the training set
-data/train/masks - contains masked (labeled) images for the training set
-data/validation/images - contains images for the validation set
-data/validation/masks - contains masked (labeled) images for the validation set
-data/weights - contains trained models
-
-data/raw_sim_data/train/run1
-data/raw_sim_data/validation/run1
-```
-
-
 # Getting started
 In a nutshell here's how to use this project, so **for example** assume you want to implement ResNet-18 to train mnist, so you should do the following:
 - In `modeling`  folder create a python file named whatever you like, here we named it `example_model.py` . In `modeling/__init__.py` file, you can build a function named `build_model` to call your model
@@ -112,6 +98,19 @@ This repo has following directory structure:
     ├───data_reports
     |───final_reports
     └───project_reports
+```
+
+The data directory is organized as follows:
+```
+data/runs - contains the results of prediction runs
+data/train/images - contains images for the training set
+data/train/masks - contains masked (labeled) images for the training set
+data/validation/images - contains images for the validation set
+data/validation/masks - contains masked (labeled) images for the validation set
+data/weights - contains trained models
+
+data/raw_sim_data/train/run1
+data/raw_sim_data/validation/run1
 ```
 
 # Todo
