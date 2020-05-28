@@ -86,7 +86,7 @@ val_loader = make_data_loader(cfg, is_train=False)
 optimizer = make_optimizer(cfg, model)
 ```
 
-# Details
+## Important details
 For all reported experimental results, check if you include:
 - The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results.
 
