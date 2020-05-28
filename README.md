@@ -4,16 +4,9 @@ A simple and well designed structure is essential for any Deep Learning project 
 
 
 # Requirements
-## libs
-Specification of dependencies
+## Specification of dependencies
 - [PyTorch](https://pytorch.org/) (An open source deep learning platform) 
 - [ignite](https://github.com/pytorch/ignite) (High-level library to help with training neural networks in PyTorch)
-## dataset
-- A link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control.
-
-**Install Dependencies**
-
-You'll need Python 3 and Jupyter Notebooks installed to do this project. 
 
 If for some reason you choose not to use Anaconda, you must install the following frameworks and packages on your system:
 * Python 3.7
@@ -22,7 +15,8 @@ If for some reason you choose not to use Anaconda, you must install the followin
 * python-socketio
 * scikit-image
 
-
+## Data
+- A link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control.
 
 # Getting started
 
