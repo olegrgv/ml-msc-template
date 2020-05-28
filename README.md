@@ -146,4 +146,6 @@ If you use this package in your publications or in other work, please cite it as
     archivePrefix={arXiv},
     primaryClass={cs.CV}
 }
-
+```
+# Maintainer
+Email, name
