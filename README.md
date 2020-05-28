@@ -25,7 +25,7 @@ If for some reason you choose not to use Anaconda, you must install the followin
 # Data
 Provide a link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control (e.g, CVAT was used etc.).
 
-# Getting started
+# Experiment
 In a nutshell here's how to use this project, so **for example** assume you want to implement ResNet-18 to train mnist, so you should do the following:
 - In `modeling`  folder create a python file named whatever you like, here we named it `example_model.py` . In `modeling/__init__.py` file, you can build a function named `build_model` to call your model
 
@@ -38,7 +38,7 @@ def build_model(cfg):
 ``` 
    
 - In `engine`  folder create a model trainer function and inference function. In trainer function, you need to write the logic of the training process, you can use some third-party library to decrease the repeated stuff.
-
+## Training your Model
 ```python
 # trainer
 def do_train(cfg, model, train_loader, val_loader, optimizer, scheduler, loss_fn):
@@ -71,7 +71,21 @@ val_loader = make_data_loader(cfg, is_train=False)
 # create your model optimizer
 optimizer = make_optimizer(cfg, model)
 ```
+## Scoring
+Please specify any custom metrics you use:
+$\text{TI}\left(p, \hat{p}\right) = \frac{p\hat{p}}{p\hat{p} + \beta(1 - p)\hat{p} + (1 - \beta)p(1 - \hat{p})}$
 
+And how:
+```
+def tversky_loss(beta):
+  def loss(y_true, y_pred):
+    numerator = tf.reduce_sum(y_true * y_pred, axis=-1)
+    denominator = y_true * y_pred + beta * (1 - y_true) * y_pred + (1 - beta) * y_true * (1 - y_pred)
+
+    return 1 - (numerator + 1) / (tf.reduce_sum(denominator, axis=-1) + 1)
+
+  return loss
+```
 ## Important details
 For all reported experimental results, check if you include:
 - The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results.
