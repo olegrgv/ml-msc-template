@@ -11,6 +11,19 @@ Specification of dependencies
 ## dataset
 - A link to a downloadable version of the dataset or simulation environment. For new data collected, a description of the data collection process, such as instructions to annotators and methods for quality control.
 
+**Install Dependencies**
+
+You'll need Python 3 and Jupyter Notebooks installed to do this project. 
+
+If for some reason you choose not to use Anaconda, you must install the following frameworks and packages on your system:
+* Python 3.7
+* Pytorch x.x.x
+* h5py
+* python-socketio
+* scikit-image
+
+
+
 # Getting started
 
 # Details
