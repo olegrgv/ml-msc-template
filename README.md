@@ -112,6 +112,17 @@ This repo has following directory structure:
 # Todo
 -hyper parameter search template
 
-# License
-MIT License
+# Citing
+
+If you use this package in your publications or in other work, please cite it as follows:
+
+```
+@misc{ronneberger2015unet,
+    title={U-Net: Convolutional Networks for Biomedical Image Segmentation},
+    author={Olaf Ronneberger and Philipp Fischer and Thomas Brox},
+    year={2015},
+    eprint={1505.04597},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
 
