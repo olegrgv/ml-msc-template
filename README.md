@@ -93,7 +93,9 @@ For all reported experimental results, check if you include:
 
 # Project structure
 You may find useful one of the ready-to-use file structure generators, if needed:
+
 https://github.com/ramonmoraes/structure-generator
+
 Or simply use
 ```
 git ls-tree -r master --name-only
