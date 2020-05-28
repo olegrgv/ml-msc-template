@@ -73,8 +73,8 @@ optimizer = make_optimizer(cfg, model)
 ```
 ## Scoring
 Please specify any custom metrics you use:
+
 <img src="https://render.githubusercontent.com/render/math?math=\text{TI}\left(p, \hat{p}\right) = \frac{p\hat{p}}{p\hat{p} + \beta(1 - p)\hat{p} + (1 - \beta)p(1 - \hat{p})}">
-$\text{TI}\left(p, \hat{p}\right) = \frac{p\hat{p}}{p\hat{p} + \beta(1 - p)\hat{p} + (1 - \beta)p(1 - \hat{p})}$
 
 And how:
 ```
