@@ -33,7 +33,7 @@ data/raw_sim_data/validation/run1
 
 
 # Getting started
-In a nutshell here's how to use this template, so **for example** assume you want to implement ResNet-18 to train mnist, so you should do the following:
+In a nutshell here's how to use this project, so **for example** assume you want to implement ResNet-18 to train mnist, so you should do the following:
 - In `modeling`  folder create a python file named whatever you like, here we named it `example_model.py` . In `modeling/__init__.py` file, you can build a function named `build_model` to call your model
 
 ```python
@@ -43,7 +43,6 @@ def build_model(cfg):
     model = ResNet18(cfg.MODEL.NUM_CLASSES)
     return model
 ``` 
-
    
 - In `engine`  folder create a model trainer function and inference function. In trainer function, you need to write the logic of the training process, you can use some third-party library to decrease the repeated stuff.
 
@@ -80,14 +79,6 @@ val_loader = make_data_loader(cfg, is_train=False)
 optimizer = make_optimizer(cfg, model)
 ```
 
-- Pass the all these objects to the function `do_train` , and start your training
-```python
-# here you train your model
-do_train(cfg, model, train_loader, val_loader, optimizer, None, F.cross_entropy)
-```
-
-**You will find a template file and a simple example in the model and trainer folder that shows you how to try your first model simply.**
-
 # Details
 For all reported experimental results, check if you include:
 - The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results.
@@ -112,7 +103,7 @@ This repo has following directory structure:
 ```
 
 # Todo
-- [] hyper parameter search template
+[] hyper parameter search template
 
 # License
 MIT License
