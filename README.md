@@ -93,7 +93,23 @@ For all reported experimental results, check if you include:
 - The range of hyper-parameters considered, method to select the best hyper-parameter configuration, and specification of all hyper-parameters used to generate results.
 
 # Project structure
-A description of the computing infrastructure used.
+
+This repo has following directory structure:
+```
+.
+├───code
+│   ├───data_acquisition_exploration
+│   ├───deployment
+│   └───modelling
+├───data
+│   ├───exploration
+│   ├───processed
+│   └───raw
+└───docs
+    ├───data_reports
+    |───final_reports
+    └───project_reports
+```
 
 # Todo
 - [] hyper parameter search template
