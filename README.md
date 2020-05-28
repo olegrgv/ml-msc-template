@@ -110,7 +110,7 @@ This repo has following directory structure:
 ```
 
 # Todo
-[checkbox:unchecked] hyper parameter search template
+-hyper parameter search template
 
 # License
 MIT License
