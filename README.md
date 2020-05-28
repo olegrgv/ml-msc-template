@@ -71,7 +71,7 @@ val_loader = make_data_loader(cfg, is_train=False)
 # create your model optimizer
 optimizer = make_optimizer(cfg, model)
 ```
-## Scoring
+## Custom scores, loss functions
 Please specify any custom metrics you use:
 
 <img src="https://render.githubusercontent.com/render/math?math=\text{TI}\left(p, \hat{p}\right) = \frac{p\hat{p}}{p\hat{p} + \beta(1 - p)\hat{p} + (1 - \beta)p(1 - \hat{p})}">
