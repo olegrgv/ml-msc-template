@@ -1,6 +1,7 @@
 # ML project description
 A simple and well designed structure is essential for any Deep Learning project - **simplicity, best practice for folder structure**. 
 
+Include your architecture image:
 <p align="center">
 <img src="img/sample.png" alt>
 
