@@ -77,7 +77,7 @@ Please specify any custom metrics you use:
 <img src="https://render.githubusercontent.com/render/math?math=\text{TI}\left(p, \hat{p}\right) = \frac{p\hat{p}}{p\hat{p} + \beta(1 - p)\hat{p} + (1 - \beta)p(1 - \hat{p})}">
 
 And how:
-```
+```python
 def tversky_loss(beta):
   def loss(y_true, y_pred):
     numerator = tf.reduce_sum(y_true * y_pred, axis=-1)
