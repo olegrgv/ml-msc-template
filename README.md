@@ -3,6 +3,9 @@
 # ML project description
 A simple and well designed structure is essential for any Deep Learning project - **simplicity, best practice for folder structure**. 
 
+## Changes and updates
+- 26-07-2022: Added the ```/rebuttal.tex``` template to address the reviewers' comments in a non-chaotic structured way
+
 Include your architecture image:
 <p align="center">
 <img src="img/sample.png" alt>
