@@ -1,6 +1,6 @@
 [![Python](https://img.shields.io/badge/python-3.6-blue.svg)](https://python.org)
 
-# ML project description
+# ML/AI project description
 A simple and well designed structure is essential for any Deep Learning project - **simplicity, best practice for folder structure**. 
 
 ## Changes and updates
